@@ -1,0 +1,12 @@
+This app uses logstash files from https://github.com/mutedmouse/ELKomply_configs in conjunction with logstash running on Security Onion (16.x and 2.x) and HELK platforms to alias and extract data into Splunk CIM compliance.
+
+Currently Supported platforms:
+ - HELK
+ - Security Onion 2.x
+ - Security Onion 16.x
+
+Future Platforms:
+ - Moloch
+ - RockNSM
+
+Not all XIM datamodels are currently mapped, please feel free to check back often for more mappings or contribute with a pull request on https://github.com/mutedmouse/ELKomply

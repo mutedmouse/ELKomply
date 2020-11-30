@@ -1,0 +1,673 @@
+
+# Application-level permissions
+
+[]
+access = read : [ * ], write : [ admin, power ]
+
+### EVENT TYPES
+
+[eventtypes]
+export = system
+
+
+### PROPS
+
+[props]
+export = system
+
+
+### TRANSFORMS
+
+[transforms]
+export = system
+
+
+### LOOKUPS
+
+[lookups]
+export = system
+
+
+### VIEWSTATES: even normal users should be able to create shared viewstates
+
+[viewstates]
+access = read : [ * ], write : [ * ]
+export = system
+
+[app/ui]
+version = 8.1.0
+modtime = 1595624829.263480000
+
+[app/launcher]
+version = 8.1.0
+modtime = 1595624829.264959000
+
+[inputs/http%3A%2F%2Fhost]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[inputs/http%3A%2F%2Fnetwork]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[eventtypes/network_alert]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[tags/eventtype%3Dnetwork_alert]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-ids_type]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-alert_body]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-all_dest_ip]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-all_dest]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-alert_id]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-severity]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-alert_severity_id]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-all_src]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-all_src_ip]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-alert_subject]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-type]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[eventtypes/network_certificates]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[tags/eventtype%3Dnetwork_certificates]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EXTRACT-ssl_issuer_email]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-all_src_port]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-certificates_ssl_issuer]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-certificates_ssl_issuer_common_name]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-all_dest_port]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-certificates_ssl_issuer_locality]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-certificates_ssl_issuer_organization]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-certificates_ssl_issuer_state]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-certificates_ssl_issuer_street]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-ssl_session_id]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EXTRACT-ssl_subject_email]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-certificates_ssl_issuer_unit]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-certificates_ssl_subject]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-certificates_ssl_subject_common_name]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-certificates_ssl_subject_locality]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-certificates_ssl_subject_organization]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-certificates_ssl_subject_state]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-ssl_version]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-certificates_ssl_subject_street]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-certificates_ssl_subject_unit]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EXTRACT-certificate_not_valid_before]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EXTRACT-certificate_not_valid_after]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-ssl_end_time]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-ssl_start_time]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-certificates_ssl_engine]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-ssl_is_valid]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-certificates_ssl_publickkey_algorithm]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-certificates_ssl_serial]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-intrusion_detection_alert]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-vendor_product]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[eventtypes/network_dns]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[tags/eventtype%3Dnetwork_dns]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-answer]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_user]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_transport]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_src]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_vendor_product]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/EVAL-dest]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_parent_process]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_parent_process_exec]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_parent_process_guid]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_parent_process_id]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_parent_process_name]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_parent_process_path]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_process]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_process_exec]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_process_hash]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_user_id]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[eventtypes/endpoint_processes_eventlog]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[tags/eventtype%3Dendpoint_processes_eventlog]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_Account_Name]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_Process_Command_Line]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/EVAL-hashes]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/EVAL-Hashes]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_file_create_time]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/EVAL-file_name]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[eventtypes/endpoint_filesystem_eventlog]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[tags/eventtype%3Dendpoint_filesystem_eventlog]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/EVAL-file_path]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/EVAL-registry_hive]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/EVAL-registry_key_name]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[eventtypes/endpoint_registry_eventlog]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[tags/eventtype%3Dendpoint_registry_eventlog]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/EXTRACT-registry_path]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_registry_value_data]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-all_registry_value_text]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-endpoint_traffic_dest_ip]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-endpoint_traffic_dest_port]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-endpoint_traffic_protocol_version]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-endpoint_traffic_src_ip]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/FIELDALIAS-endpoint_traffic_transport]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[eventtypes/endpoint_traffic]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[tags/eventtype%3Dendpoint_traffic]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/EVAL-action]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[eventtypes/change_account_eventlog]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[tags/eventtype%3Dchange_account_eventlog]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Ahelk/EVAL-object]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-app]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-bytes]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-all_bytes_in]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-all_bytes_out]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[tags/eventtype%3Dnetwork_conn]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[eventtypes/network_traffic_conn]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[tags/eventtype%3Dnetwork_traffic_conn]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-network_traffic_session_id]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-packets]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-network_traffic_packets_in]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-network_traffic_packets_out]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-network_traffic_transport]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-protocol_version]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-direction]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-file_hash]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-endpoint_securityonion_file_name]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-all_conn_transforms]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-all_conn_transforms_cim]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[lookups/conn_state.csv]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[transforms/conn_state]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/LOOKUP-conn_state]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-alert_gid]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-alert_rev]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-alert_signature_id]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-action]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[lookups/severity.csv]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[transforms/severity]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/LOOKUP-severity]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-alert_severity]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-signature]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/FIELDALIAS-all_securityonion_dns_cim]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-message_type]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
