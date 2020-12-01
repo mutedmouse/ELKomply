@@ -671,3 +671,8 @@ owner = admin
 access = read : [ * ], write : [ admin ]
 export = system
 owner = admin
+
+[props/source%3A%3Asecurityonion/EVAL-category]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
